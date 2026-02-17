@@ -1,0 +1,3 @@
+Masukkan nama file input atau path (misal case.txt atau testcase/tc.txt): ../testcase/tc5.txt
+File ../testcase/tc5.txt berhasil dibuka.
+Error: Format papan cacat!

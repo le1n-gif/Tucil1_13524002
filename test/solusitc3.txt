@@ -1,0 +1,3 @@
+Masukkan nama file input atau path (misal case.txt atau testcase/tc.txt): ../testcase/tc3.txt
+File ../testcase/tc3.txt berhasil dibuka.
+Jumlah karakter/warna pada papan tidak sesuai dengan ukuran papan.

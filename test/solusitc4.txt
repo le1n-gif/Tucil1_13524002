@@ -1,0 +1,3 @@
+Masukkan nama file input atau path (misal case.txt atau testcase/tc.txt): ../testcase/tc4.txt
+File ../testcase/tc4.txt berhasil dibuka.
+Board tidak berbentuk persegi (n x n)!

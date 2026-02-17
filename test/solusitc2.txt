@@ -1,0 +1,3 @@
+Masukkan nama file input (misal case.txt): ../testcase/tc2.txt
+File ../testcase/tc2.txt berhasil dibuka.
+Format input tidak valid.
