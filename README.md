@@ -103,66 +103,6 @@ Iterasi: 362880
 Waktu eksekusi: 1234.56 ms
 ```
 
-## Validasi File Input
-
-Program melakukan validasi berikut:
-
-| Validasi | Error Message |
-|----------|---------------|
-| File tidak ditemukan | `File tidak ditemukan` |
-| Format file bukan .txt | `Format file tidak valid` |
-| File kosong | `File kosong!` |
-| Baris dengan panjang berbeda | `Format input tidak valid` |
-| Ukuran bukan square (N×N) | `Board tidak berbentuk persegi (n x n)!` |
-| Ada spasi/tab dalam board | `Error: Format papan cacat!` |
-| Karakter bukan A-Z | `Error: Karakter tidak valid ditemukan!` |
-| Jumlah warna ≠ N | `Jumlah karakter/warna pada papan tidak sesuai dengan ukuran papan` |
-| Ukuran melebihi 26×26 | `Ukuran papan melebihi batas maksimal` |
-
-## Validasi Output
-
-Program juga memastikan file output:
-- **Hanya menerima ekstensi `.txt`**
-- Jika user input tanpa `.txt`, program akan menolak dan meminta input ulang
-- File berisi:
-  - Board dengan penempatan ratu (`#`)
-  - Jumlah iterasi
-  - Waktu eksekusi dalam milidetik
-
-## Algoritma
-
-Program menggunakan **Brute Force dengan Backtracking**:
-
-1. Mencoba semua kombinasi penempatan N ratu pada papan N×N
-2. Untuk setiap konfigurasi, cek validitas:
-   - Tidak ada ratu di kolom yang sama
-   - Tidak ada ratu bersebelahan (L-shaped check)
-   - Tidak ada ratu dengan warna sama
-3. Jika valid, solusi ditemukan
-4. Jika tidak, backtrack dan coba kombinasi berikutnya
-
-## Complexity
-
-- **Time Complexity**: O(N!) dalam worst case
-- **Space Complexity**: O(N) untuk menyimpan posisi ratu
-
-## Catatan
-
-- Program menggunakan `system("cls")` untuk Windows dan `system("clear")` untuk Linux/Mac
-- Setiap 1 juta iterasi, program menampilkan progress ke layar
-- Board dari input dipertahankan dan ditampilkan di output (dengan ratu diganti `#`)
-
-## Test Case
-
-Tersedia 5 test case di folder `test/`:
-- **tc1.txt**: Valid input 9×9
-- **tc2.txt**: Error - jumlah kolom tidak sesuai
-- **tc3.txt**: Error - jumlah warna tidak sesuai
-- **tc4.txt**: Error - board tidak persegi (non-square)
-- **tc5.txt**: Error - format papan cacat (ada spasi)
-
-Jalankan dan bandingkan output dengan file `solusitc1.txt` - `solusitc5.txt`
-
 ## Author
 
 Tugas Kecil 1 - IF2211 Strategi Algoritma
